@@ -6,9 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DummyControllerUser {
 
-    @GetMapping("/hello")
+    @GetMapping("/users")
     public String doSomething(){
-        System.out.println("request recieved");
-        return "Hello";
+        System.out.println("request recieved at user service");
+        return "Hello, From User service";
     }
+
+
 }
